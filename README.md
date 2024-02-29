@@ -25,3 +25,5 @@ agent.sinks.sink1.hdfs.rollCount = 0
 # Bind the source and sink to the channel
 agent.sources.source1.channels = channel1
 agent.sinks.sink1.channel = channel1
+
+bin/flume-ng agent --conf conf --conf-file flume.conf --name agent_name -Dflume.root.logger=INFO,console
